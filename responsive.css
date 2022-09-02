@@ -1,0 +1,142 @@
+@media(min-width:1200px){
+.container{
+width: 1170px;
+}
+}
+@media(min-width:992px){
+.container{
+max-width: 960px;
+}
+}
+@media(min-width:992px){
+.container{
+width: 990px;
+}
+}
+
+
+
+@media(max-width:992px){
+.project section .cards{
+display: block;
+}
+section#profilo .container .box-imge {
+    display: grid;
+    grid-template-columns:repeat(2, auto);
+}
+section#Blog .container .room{
+display: grid;
+grid-template-columns:repeat(2, auto);
+}
+.project section .image{
+width: 150px;
+margin-left: 50px;
+}
+.project section .image::after {
+content: "";
+position: absolute;
+width: 35px;
+height: 35px;
+border-bottom: 5px solid var(--skin-color);
+border-right: 5px solid var(--skin-color);
+top: 97%;
+left: 219px;
+}
+section#Blog .container .room .small-room {
+padding-bottom: 30px;
+}
+}
+@media(max-width:992px){
+section#Services .container .box-size{
+display: grid;
+grid-template-columns: repeat(2 ,1fr);
+}
+.project .header .container .nav{
+    display: none;
+    }
+    .project .header .container  .fa-bars{
+        display: block;
+        }
+}
+@media(max-width:575px){
+    section#profilo .container .box-imge img{
+        width: 170px;
+    }
+    section#Blog .container .room{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        }
+}
+
+@media(min-width:575px) and (max-width:768px){
+    section#Blog .container .room{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        }
+        section#Blog .container .room .small-room img {
+            width: 286px;
+        }
+}
+@media(max-width:768px){
+section .container .box,
+section#profilo .container .box-imge{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 5px;
+}
+
+section#profilo .container .box-imge{
+    margin: 0 30px;
+}
+
+.project .header .container .nav.open li {
+padding-top: 16px;
+}
+.project .header .container .nav.open li a{
+color: aliceblue;
+font-size: 20px;
+text-align: center;
+}
+.project .header .container .nav.open {
+    width: 39%;
+    display: block;
+    background: var(--skin-color);
+    position: absolute;
+    top: 49px;
+    left: 62%;
+    height: 100vh;
+    padding-left: 0;
+    text-align: center;
+    z-index: 100;
+}
+
+section .container .box .iamge{
+text-align: center;
+}
+section#Services .container .box-size{
+display: flex;
+flex-direction: column;
+}
+
+section#profilo .container .all-box {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+}
+@media(max-width:500px){
+    .list{
+        width: 146px;
+        margin-left: 20px;
+    }
+    .filter > li.lage {
+        margin: auto;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    section#Blog .container .room .small-room{
+        padding-bottom: 23px;
+    }
+}
